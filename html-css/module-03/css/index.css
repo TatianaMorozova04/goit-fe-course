@@ -1,7 +1,8 @@
 body,
 li,
 p,
-button {
+button,
+a {
   font-family: "Playfair Display", serif;
   font-size: 14px;
   font-weight: 200;
