@@ -27,7 +27,7 @@
 .logo:focus {
   outline: none;
 }
-.logo p:first-letter {
+.logo h1:first-letter {
   font-weight: 900;
   color: #1abc9c;
 }
@@ -49,7 +49,7 @@
 .site-navigation a:hover {
   color: #1abc9c;
 }
-.main-section h2 {
+.title {
   font-family: "Roboto";
   font-weight: 900;
   font-size: 48px;
@@ -59,7 +59,7 @@
   margin-bottom: 30px;
 }
 
-.main-section h2:after {
+.title:after {
   content: "";
   display: block;
   width: 165px;
@@ -69,20 +69,17 @@
 .featured-products {
   margin-bottom: 100px;
 }
-.featured-products ul:before,
-.featured-products ul:after {
+.clearfix:after {
   content: "";
   display: table;
-}
-.featured-products ul:after {
   clear: both;
 }
+
 .featured-products li {
   float: left;
 }
 .product {
   width: 255px;
-  height: 322px;
   background-color: #e8effc;
   margin-right: 30px;
   margin-bottom: 30px;
@@ -105,13 +102,12 @@
   font-weight: 400;
   font-size: 18px;
   text-transform: uppercase;
+  background-color: #323232;
 }
 
 .description {
   float: left;
   width: 200px;
-  height: 40px;
-  background-color: #323232;
   padding-left: 14px;
   line-height: 40px;
 }
@@ -119,17 +115,14 @@
 .price {
   float: right;
   width: 55px;
-  height: 40px;
-  background-color: #8c8c8c;
+  background-color:rgba(255, 255, 255, 0.44);
   line-height: 40px;
   text-align: center;
 }
-.product:hover .description {
+.product:hover .product-info {
   background-color: #1abc9c;
 }
-.product:hover .price {
-  background-color: #7fd9c7;
-}
+
 .news-section {
   font-family: "Open Sans";
   width: 350px;
@@ -139,14 +132,14 @@
 .news-section:last-child {
   margin-right: 0px;
 }
-.news-section h4 {
+.news-title {
   color: #555252;
   font-size: 18px;
   font-weight: 600;
   line-height: 26px;
   padding: 5px 0px;
 }
-.news-section h4:after {
+.news-title:after {
   content: "";
   display: block;
   width: 135px;
