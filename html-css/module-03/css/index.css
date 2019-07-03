@@ -10,7 +10,7 @@ a {
   color: #626262;
 }
 
-.main-container {
+.wrapper {
   width: 900px;
   margin: 0 auto;
   margin-bottom: 20px;
@@ -18,7 +18,8 @@ a {
 
 .navigation li {
   display: inline-block;
-  margin: 80px 60px 105px;
+  margin-right: 100px;
+  padding: 70px 0px 100px;
 }
 
 .navigation ul {
@@ -46,11 +47,13 @@ a {
 }
 
 .article img {
-  width: 100%;
+  width: auto;
   height: 280px;
 }
 
 .sign {
+  font-family: Ubuntu;
+  font-weight: 300;
   text-transform: uppercase;
   color: #b4ad9e;
   margin-top: 30px;
