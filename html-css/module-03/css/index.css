@@ -21,7 +21,9 @@ a {
   margin-right: 100px;
   padding: 70px 0px 100px;
 }
-
+.navigation li:last-child {
+  margin: 0px;
+}
 .navigation ul {
   text-align: center;
 }
