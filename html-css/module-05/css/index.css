@@ -203,6 +203,12 @@ h1::first-letter {
   margin-right: 5px;
   margin-bottom: 5px;
 }
+.list-icon li:last-child {
+  margin-bottom: 0;
+}
+.list-icon li:nth-child(n+3){
+  margin-right: 0;
+}
 .icon {
   border: 1px solid rgb(255, 255, 255);
   width: 50px;
