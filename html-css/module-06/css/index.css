@@ -1,0 +1,298 @@
+.visually-hidden:not(:focus) :not(:active),
+input[type="checkbox"],
+visually-hidden,
+input[type="radio"],
+.visually-hidden {
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  min-height: 50px;
+  margin-bottom: 130px;
+  font-family: Montserrat;
+}
+.nav {
+  display: flex;
+}
+.header a {
+  text-decoration: none;
+  outline: none;
+  color: rgb(149, 225, 211);
+}
+.logo {
+  font-size: 30px;
+  font-weight: 700;
+}
+.menu {
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding-right: 60px;
+}
+.menu:last-child {
+  padding-right: 0;
+}
+.nav a {
+  transition-property: color, border-bottom;
+  transition-duration: 200ms;
+  transition-timing-function: linear;
+}
+.nav a:hover {
+  content: "";
+  padding-bottom: 12px;
+  border-bottom: 4px solid rgb(243, 129, 129);
+  color: rgb(243, 129, 129);
+}
+.section-title {
+  font-size: 24px;
+  font-weight: 400;
+  font-family: Kaushan Script;
+  text-align: center;
+  line-height: 45px;
+}
+.section-title-main {
+  display: block;
+  font-size: 30px;
+  font-weight: 700;
+  font-family: Montserrat;
+  text-transform: uppercase;
+}
+.section-title::after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 60px;
+  padding-bottom: 45px;
+  border-bottom: 4px solid rgb(243, 129, 129);
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 65px 0 90px;
+}
+.services-section {
+  flex-basis: 340px;
+}
+.services-title {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: Montserrat;
+  text-transform: uppercase;
+  color: rgb(51, 51, 51);
+  padding-bottom: 20px;
+}
+.main-text {
+  font-size: 15px;
+  font-weight: 400;
+  font-family: Roboto;
+  color: rgb(153, 153, 153);
+  line-height: 24px;
+}
+.services-position {
+  margin-left: 60px;
+}
+.services-section:not(:nth-child(3n)) {
+  margin-right: 90px;
+}
+.services-section:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 100px;
+}
+.services-alarm::before {
+  content: url(../img/services-icons/ALARM.png);
+  float: left;
+}
+.services-graph::before {
+  content: url(../img/services-icons/GRAPH.png);
+  float: left;
+}
+.services-computer::before {
+  content: url(../img/services-icons/COMPUTER.png);
+  float: left;
+}
+.services-book::before {
+  content: url(../img/services-icons/BOOK.png);
+  float: left;
+}
+.services-home::before {
+  content: url(../img/services-icons/HOME.png);
+  float: left;
+}
+.services-image::before {
+  content: url(../img/services-icons/IMAGE.png);
+  float: left;
+}
+
+.team-section {
+  margin-bottom: 80px;
+}
+.team-description-position {
+  margin: 45px auto 90px;
+  width: 950px;
+  text-align: center;
+}
+.team-list {
+  display: flex;
+  justify-content: space-between;
+}
+.team-image {
+  margin-bottom: 30px;
+  position: relative;
+  transition-property: transform, box-shadow;
+  transition-duration: 200ms;
+  transition-timing-function: linear;
+}
+.team-image:hover {
+  transform: translate(-10px, -10px);
+  box-shadow: 10px 10px 0px 0px rgb(149, 225, 211);
+}
+.team-image::after {
+  content: "";
+  background-image: linear-gradient(0deg, #fce38a, #f38181);
+  width: 380px;
+  height: 470px;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 200ms linear;
+}
+.team-image:hover::after {
+  opacity: 0.9;
+}
+.team {
+  text-align: center;
+}
+.team-name {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: Montserrat;
+  color: rgb(51, 51, 51);
+  margin-bottom: 15px;
+}
+.team-description {
+  font-weight: 300;
+  font-style: italic;
+}
+.social-list {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  opacity: 0;
+  transition: opacity 200ms linear;
+}
+.team-image:hover .social-list {
+  opacity: 1;
+}
+.social-item {
+  width: 56px;
+  height: 56px;
+  border-right: 1px solid rgba(243, 129, 129, 0.502);
+  background-color: rgb(252, 227, 138);
+}
+.social-icons {
+  width: 100%;
+  height: 100%;
+  display: block;
+  cursor: pointer;
+  transition: background-color 200ms linear;
+}
+.social-icons:hover {
+  background-color: rgb(149, 225, 211);
+}
+.social-item:last-child {
+  border-right: none;
+}
+.icon-facebook {
+  background-image: url(../img/icons/facebook.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.icon-twitter {
+  background-image: url(../img/icons/twitter.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.icon-pinterest {
+  background-image: url(../img/icons/pinterest.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.icon-instagram {
+  background-image: url(../img/icons/instagram.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.list-footer {
+  min-height: 65px;
+  border-top: 1px solid #e5e5e5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-info {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: Montserrat;
+  color: rgb(51, 51, 51);
+}
+.footer-info span {
+  color: rgb(243, 129, 129);
+}
+.fotter-form {
+  display: flex;
+  width: 380px;
+  height: 40px;
+}
+.form-input {
+  box-sizing: border-box;
+  width: 60%;
+  height: 100%;
+  padding-left: 10px;
+  border: 1px solid rgb(204, 204, 204);
+  border-right: none;
+}
+.form-input::placeholder {
+  font-size: 15px;
+  font-family: Roboto;
+  color: rgb(204, 204, 204);
+  font-weight: 300;
+  font-style: italic;
+}
+.form-button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  width: 40%;
+  height: 100%;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  background-color: rgb(149, 225, 211);
+  transition: background-color 200ms linear;
+}
+
+.form-button:hover {
+  background-color: rgb(76, 194, 172);
+}
