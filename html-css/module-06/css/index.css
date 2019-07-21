@@ -162,8 +162,8 @@ input[type="radio"],
 .team-image::after {
   content: "";
   background-image: linear-gradient(0deg, #fce38a, #f38181);
-  width: 380px;
-  height: 470px;
+  width: 100%;
+  height: 100%;
   display: block;
   position: absolute;
   top: 0;
@@ -176,6 +176,7 @@ input[type="radio"],
 }
 .team {
   text-align: center;
+  width: 380px;
 }
 .team-name {
   text-transform: uppercase;
@@ -255,8 +256,10 @@ input[type="radio"],
   font-family: Montserrat;
   color: rgb(51, 51, 51);
 }
-.footer-info span {
+.footer-info a {
   color: rgb(243, 129, 129);
+  text-decoration: none;
+  outline: none;
 }
 .fotter-form {
   display: flex;
