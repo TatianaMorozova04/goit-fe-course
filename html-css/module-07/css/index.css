@@ -1,3 +1,4 @@
+
 .wrapper {
   width: 940px;
   margin: 0 auto;
@@ -18,10 +19,15 @@
 }
 .logo {
   color: rgb(254, 209, 54);
+  font-family: "NoricanRegular", cursive;
+  font-size: 26px;
+  letter-spacing: -0.05em;
 }
 .menu a {
   text-transform: uppercase;
   color: rgb(34, 34, 34);
+  font-family: "MontserratRegular", sans-serif;
+  font-size: 14px;
 }
 .menu:not(:last-child) {
   padding-right: 40px;
@@ -36,11 +42,16 @@
 }
 .section-title {
   text-transform: uppercase;
+  font-family: "MontserratBold", sans-serif;
+  font-size: 40px;
+  letter-spacing: -0.025em;
 }
 .section-description {
   font-size: 16px;
   line-height: 60px;
   margin-bottom: 75px;
+  font-family: "DriodSerifRegularItalic", cursive;
+  font-size: 16px;
 }
 .services-list {
   display: flex;
@@ -72,10 +83,16 @@
 .services-title {
   text-transform: capitalize;
   margin-bottom: 10px;
+  font-family: "MontserratBold", sans-serif;
+  font-size: 18px;
+  letter-spacing: -0.025em;
 }
 .services-description {
   font-size: 14px;
   line-height: 25px;
+  font-family: "RobotoSlabRegular", serif;
+  font-size: 14px;
+  letter-spacing: -0.025em;
 }
 
 .form-wrapper {
@@ -101,14 +118,16 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  color: rgb(187, 187, 187);
+  
 }
 .form-input {
   box-sizing: border-box;
   width: 455px;
   height: 50px;
-  border-radius: 5px; 
+  border-radius: 5px;
   padding-left: 20px;
+  border: none;
+ 
 }
 .form-textarea {
   width: 455px;
@@ -118,8 +137,15 @@
   border-radius: 5px;
   font-size: 14px;
   line-height: 25px;
+  border: none;
 }
-
+.form-font::placeholder {
+  font-family: "MontserratBold", sans-serif;
+  font-size: 14px;
+  letter-spacing: -0.025em;
+  color: rgb(187, 187, 187);
+  text-transform: uppercase;
+}
 .required:valid {
   border: 2px solid rgb(0, 127, 0);
   border-radius: 5px;
@@ -140,6 +166,8 @@
   border: none;
   border-radius: 5px;
   background-color: rgb(254, 209, 54);
+  font-family: "MontserratBold", sans-serif;
+  font-size: 18px;
   color: rgb(255, 255, 255);
   text-transform: uppercase;
 }
@@ -152,3 +180,4 @@
   background-position: right bottom;
   background-repeat: no-repeat;
 }
+
