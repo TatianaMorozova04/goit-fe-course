@@ -1,0 +1,215 @@
+h1,
+h2,
+h3,
+a {
+  font-family: "MontserratBold", serif;
+}
+
+.header-wrapper {
+  background-color: rgb(26, 25, 21);
+  background-image: url(../image/header.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 100%;
+  height: auto;
+}
+.wrapper {
+  width: 280px;
+  margin: 0 auto;
+  text-align: center;
+}
+.logo-main {
+  display: none;
+}
+.authorization {
+  padding: 20px 0 115px;
+}
+.authorization-button {
+  font-family: "MontserratBold", serif;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  background: transparent;
+}
+.log-button {
+  border: none;
+}
+.sign-button {
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 20px;
+  padding: 10px;
+}
+.logo-mobile {
+  display: block;
+  text-decoration: none;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding-bottom: 40px;
+}
+.header-title {
+  font-size: 28px;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  color: rgb(255, 255, 255);
+}
+.header-description {
+  font-family: "RobotoLight", serif;
+  font-size: 18px;
+  padding-bottom: 20px;
+  color: rgb(255, 255, 255);
+}
+.partner-button {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  padding: 15px 45px;
+  border-radius: 30px;
+  background-color: rgb(255, 78, 80);
+  margin-bottom: 140px;
+}
+.main-wrapper {
+  color: #333333;
+}
+.main-title {
+  font-size: 21px;
+  padding: 70px 0 15px;
+}
+.main-content {
+  margin: 0 auto;
+  width: 220px;
+  padding-bottom: 30px;
+}
+.main-content:last-child {
+  padding-bottom: 0;
+}
+.content-title {
+  font-size: 14px;
+  padding: 25px 0 15px;
+}
+.content-description {
+  font-size: 14px;
+  color: #666666;
+  font-family: "RobotoLight", serif;
+}
+.partner-image {
+  display: inline-block;
+  position: relative;
+}
+.partner-image::after {
+  content: "";
+  box-sizing: border-box;
+  width: 40px;
+  height: 40px;
+  border: 4px solid rgb(255, 255, 255);
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.partner-image-tv.partner-image::after {
+  background-color: rgb(255, 78, 80);
+  background-image: url(../image/icons/tv.png);
+  background-position: 50% 45%;
+}
+.partner-image-flask.partner-image::after {
+  background-color: rgb(255, 165, 7);
+  background-image: url(../image/icons/flask.png);
+  background-position: 50% 45%;
+}
+.partner-image-coffee.partner-image::after {
+  background-color: rgb(28, 215, 173);
+  background-image: url(../image/icons/coffee.png);
+  background-position: 50% 40%;
+}
+.partner-image-paper-plane.partner-image::after {
+  background-color: rgb(78, 115, 219);
+  background-image: url(../image/icons/paper-plane.png);
+  background-position: 40% 50%;
+}
+.main-button {
+  color: rgb(255, 78, 80);
+  border: 2px solid rgb(255, 78, 80);
+  background-color: transparent;
+  margin: 30px 0 60px;
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    width: 530px;
+  }
+  .logo-main {
+    display: block;
+    padding-bottom: 0;
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  .logo-mobile {
+    display: none;
+  }
+  .header {
+    width: 660px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0 140px;
+  }
+  .authorization {
+    padding: 0;
+  }
+  .header-title {
+    font-size: 52px;
+    padding-bottom: 40px;
+  }
+  .header-description {
+    font-size: 24px;
+    padding-bottom: 35px;
+  }
+  .partner-button {
+    display: inline-block;
+    padding: 15px 50px;
+    margin-bottom: 235px;
+  }
+  .main-title {
+    padding: 70px 0 35px;
+  }
+  .main-content {
+    padding-bottom: 50px;
+  }
+  .main-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .main-content:nth-child(2) {
+    order: 1;
+    padding-bottom: 0;
+  }
+  .main-content:nth-child(4) {
+    order: 1;
+    padding-bottom: 0;
+  }
+  .main-button {
+    margin: 40px 0;
+  }
+}
+
+@media (min-width: 1440px) {
+  .wrapper {
+    width: 940px;
+  }
+  .header-container {
+    width: 660px;
+  }
+  .main-content {
+    padding-bottom: 0;
+  }
+  .main-button {
+    margin: 40px 0 75px;
+  }
+}
