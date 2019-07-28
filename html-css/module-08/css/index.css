@@ -40,6 +40,7 @@ a {
 .logo-mobile {
   display: block;
   text-decoration: none;
+  outline: none;
   font-size: 20px;
   color: rgb(255, 255, 255);
   text-transform: uppercase;
@@ -61,6 +62,7 @@ a {
 .partner-button {
   display: inline-block;
   text-decoration: none;
+  outline: none;
   font-size: 14px;
   color: rgb(255, 255, 255);
   padding: 15px 45px;
@@ -145,6 +147,7 @@ a {
     display: block;
     padding-bottom: 0;
     text-decoration: none;
+    outline: none;
     font-size: 20px;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
