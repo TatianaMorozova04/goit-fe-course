@@ -1,0 +1,17 @@
+h1,
+h2,
+h3,
+a {
+  font-family: "MontserratBold", serif;
+}
+
+.banner-wrapper {
+  background-color: rgb(26, 25, 21);
+  background-image: url(../image/header.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (max-width:767px) {
+
+}

@@ -98,6 +98,9 @@ a {
   display: inline-block;
   position: relative;
 }
+.image-radius {
+  border-radius: 50%;
+}
 .partner-image::after {
   content: "";
   box-sizing: border-box;
@@ -202,7 +205,7 @@ a {
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 960px) {
   .wrapper {
     width: 940px;
   }
