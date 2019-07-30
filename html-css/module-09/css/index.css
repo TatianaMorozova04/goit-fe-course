@@ -4,7 +4,6 @@ h3,
 a {
   font-family: "MontserratBold", serif;
 }
-
 .banner-wrapper {
   background-color: rgb(26, 25, 21);
   background-image: url(../image/header.png);
@@ -12,6 +11,161 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
 }
-@media (max-width:767px) {
 
+
+.authorization {
+  padding: 20px 0 115px;
 }
+.authorization-button {
+  font-family: "MontserratBold", serif;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  background: transparent;
+}
+.log-button {
+  border: none;
+}
+.sign-button {
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 20px;
+  padding: 10px;
+}
+.logo {
+  text-decoration: none;
+  outline: none;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.banner-title {
+  font-size: 28px;
+  text-transform: uppercase;
+  padding: 40px 0 20px;
+  color: rgb(255, 255, 255);
+}
+.banner-description {
+  font-family: "RobotoLight", serif;
+  font-size: 18px;
+  padding-bottom: 20px;
+  color: rgb(255, 255, 255);
+}
+.partner-button {
+  text-decoration: none;
+  outline: none;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  padding: 15px 45px;
+  border-radius: 30px;
+  background-color: rgb(255, 78, 80);
+  margin-bottom: 140px;
+}
+.main-wrapper {
+  color: #333333;
+}
+.main-title {
+  font-size: 21px;
+  padding: 70px 0 15px;
+}
+.main-content {
+   padding-bottom: 30px;
+}
+.content-title {
+  font-size: 14px;
+  padding: 25px 0 15px;
+}
+.content-description {
+  font-size: 14px;
+  color: #666666;
+  font-family: "RobotoLight", serif;
+}
+.image-radius {
+  border-radius: 50%;
+}
+.partner-image {
+  display: inline-block;
+  position: relative;
+}
+.partner-image::after {
+  content: "";
+  box-sizing: border-box;
+  width: 40px;
+  height: 40px;
+  border: 4px solid rgb(255, 255, 255);
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.partner-image-tv.partner-image::after {
+  background-color: rgb(255, 78, 80);
+  background-image: url(../image/icons/tv.png);
+  background-position: 50% 45%;
+}
+.partner-image-flask.partner-image::after {
+  background-color: rgb(255, 165, 7);
+  background-image: url(../image/icons/flask.png);
+  background-position: 50% 45%;
+}
+.partner-image-coffee.partner-image::after {
+  background-color: rgb(28, 215, 173);
+  background-image: url(../image/icons/coffee.png);
+  background-position: 50% 40%;
+}
+.partner-image-paper-plane.partner-image::after {
+  background-color: rgb(78, 115, 219);
+  background-image: url(../image/icons/paper-plane.png);
+  background-position: 40% 50%;
+}
+.main-button {
+  color: rgb(255, 78, 80);
+  border: 2px solid rgb(255, 78, 80);
+  background-color: transparent;
+  margin: 30px 0 60px;
+}
+
+
+@media (min-width: 768px) {
+  .header-wrapper {
+    padding: 40px 40px 140px;
+  }
+.authorization {
+    padding: 0;
+  }
+.banner-title {
+    font-size: 52px;
+    padding-bottom: 40px;
+  }
+.banner-description {
+    font-size: 24px;
+    padding-bottom: 35px;
+  }
+ .partner-button {
+    padding: 15px 50px;
+    margin-bottom: 235px;
+  }
+.main-title {
+    padding-bottom: 35px;
+  }
+.main-content:nth-child(odd) {
+    padding-bottom: 50px;
+  }
+ .main-button {
+    margin: 40px 0;
+  }
+}
+
+
+/* 
+
+
+
+@media (min-width: 960px) {
+  .main-content {
+    padding-bottom: 0;
+  }
+  .main-button {
+    margin-bottom: 75px;
+  }
+} */
