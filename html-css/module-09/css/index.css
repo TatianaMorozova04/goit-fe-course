@@ -11,8 +11,6 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-
 .authorization {
   padding: 20px 0 115px;
 }
@@ -28,7 +26,7 @@ a {
 .sign-button {
   border: 2px solid rgb(255, 255, 255);
   border-radius: 20px;
-  padding: 10px;
+  padding: 10px 15px;
 }
 .logo {
   text-decoration: none;
@@ -60,23 +58,21 @@ a {
   background-color: rgb(255, 78, 80);
   margin-bottom: 140px;
 }
+
 .main-wrapper {
-  color: #333333;
+  color: rgb(51, 51, 51);
 }
 .main-title {
   font-size: 21px;
   padding: 70px 0 15px;
 }
-.main-content {
-   padding-bottom: 30px;
-}
 .content-title {
   font-size: 14px;
-  padding: 25px 0 15px;
+  padding: 20px 0 15px;
 }
 .content-description {
   font-size: 14px;
-  color: #666666;
+  color: rgb(102, 102, 102);
   font-family: "RobotoLight", serif;
 }
 .image-radius {
@@ -122,50 +118,47 @@ a {
   color: rgb(255, 78, 80);
   border: 2px solid rgb(255, 78, 80);
   background-color: transparent;
-  margin: 30px 0 60px;
+  margin-bottom: 55px;
 }
 
-
+@media (max-width: 767px) {
+  .main-content {
+    padding-bottom: 30px;
+  }
+}
 @media (min-width: 768px) {
   .header-wrapper {
     padding: 40px 40px 140px;
   }
-.authorization {
+  .authorization {
     padding: 0;
   }
-.banner-title {
+  .banner-title {
     font-size: 52px;
     padding-bottom: 40px;
   }
-.banner-description {
+  .banner-description {
     font-size: 24px;
     padding-bottom: 35px;
   }
- .partner-button {
+  .banner-button {
     padding: 15px 50px;
     margin-bottom: 235px;
   }
-.main-title {
+  .main-title {
     padding-bottom: 35px;
   }
-.main-content:nth-child(odd) {
-    padding-bottom: 50px;
-  }
- .main-button {
+  .main-button {
     margin: 40px 0;
   }
 }
-
-
-/* 
-
-
-
-@media (min-width: 960px) {
-  .main-content {
-    padding-bottom: 0;
+@media (min-width: 768px) and (max-width: 960px) {
+  .main-content:nth-child(odd) {
+    padding-bottom: 50px;
   }
+}
+@media (min-width: 960px) {
   .main-button {
     margin-bottom: 75px;
   }
-} */
+}
