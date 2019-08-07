@@ -217,28 +217,30 @@ padding-right: 30px;
   font-family: "RobotoRegular", serif;
   line-height: 24px;
   color: #999999;
-  padding-top: 40px;
+  padding: 40px 0 90px;
 
 }
 
 
 
-.team-list {
+.team__list {
   display: flex;
   justify-content: space-between;
+  list-style-type: none;
 }
-.team-image {
+
+.team__item--hover {
   margin-bottom: 30px;
   position: relative;
   transition-property: transform, box-shadow;
   transition-duration: 200ms;
   transition-timing-function: linear;
 }
-.team-image:hover {
+.team__item--hover:hover {
   transform: translate(-10px, -10px);
   box-shadow: 10px 10px 0px 0px rgb(149, 225, 211);
 }
-.team-image::after {
+.team__item--hover::after {
   content: "";
   background-image: linear-gradient(0deg, #fce38a, #f38181);
   width: 100%;
@@ -250,24 +252,20 @@ padding-right: 30px;
   opacity: 0;
   transition: opacity 200ms linear;
 }
-.team-image:hover::after {
+.team__item--hover:hover::after {
   opacity: 0.9;
 }
+.team__item--hover:hover .social-list {
+  opacity: 1;
+}
 
-.team-name {
-  text-transform: uppercase;
-  font-size: 14px;
-  font-weight: 400;
-  font-family: Montserrat;
-  color: rgb(51, 51, 51);
-  margin-bottom: 15px;
-}
-.team-description {
-  font-weight: 300;
-  font-style: italic;
-}
+
+
 .social-list {
+  list-style-type: none;
   position: absolute;
+  margin: 0;
+  padding: 0;
   z-index: 1;
   top: 50%;
   left: 50%;
@@ -275,52 +273,70 @@ padding-right: 30px;
   display: flex;
   opacity: 0;
   transition: opacity 200ms linear;
+  cursor: pointer;
 }
-.team-image:hover .social-list {
-  opacity: 1;
-}
-.social-item {
+
+.social-list__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 56px;
   height: 56px;
   border-right: 1px solid rgba(243, 129, 129, 0.502);
   background-color: rgb(252, 227, 138);
 }
-.social-icons {
-  width: 100%;
-  height: 100%;
-  display: block;
-  cursor: pointer;
-  transition: background-color 200ms linear;
+.social-list__link:hover {
+  background-color: rgb(243, 129, 129);
 }
-.social-icons:hover {
-  background-color: rgb(149, 225, 211);
-}
-.social-item:last-child {
+.social-list__link:last-child {
   border-right: none;
 }
-.icon-facebook {
-  background-image: url(../img/icons/facebook.png);
-  background-repeat: no-repeat;
-  background-position: center;
+.social-list__icon {
+  fill: rgb(243, 129, 129);
 }
-.icon-twitter {
-  background-image: url(../img/icons/twitter.png);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.icon-pinterest {
-  background-image: url(../img/icons/pinterest.png);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.icon-instagram {
-  background-image: url(../img/icons/instagram.png);
-  background-repeat: no-repeat;
-  background-position: center;
+.social-list__link:hover .social-list__icon {
+  fill: rgb(255, 255, 255);
 }
 
 
 
+
+
+
+/* 
+
+
+.social-list__icon--twitter {
+  background-image: url(../img/symbol-defs.svg#icon-twitter);
+ 
+  fill: rgb(243, 129, 129);
+}
+.social-list__icon--pinterest {
+  background-image: url(../img/symbol-defs.svg#icon-pinterest);
+  
+  fill: rgb(243, 129, 129);
+}
+.social-list__icon--instagram {
+  background-image: url(../img/symbol-defs.svg#icon-instagram);
+  
+  fill: rgb(243, 129, 129);
+}
+ */
+
+
+
+
+
+.team__list--title{
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: "MontserratRegular", serif;
+  color: rgb(51, 51, 51);
+  margin-bottom: 15px;
+}
+.team__list--subtitle {
+  font-family: "RobotoLight", serif;
+}
 
 
 
