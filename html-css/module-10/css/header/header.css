@@ -1,0 +1,95 @@
+
+  .header__menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    margin-bottom: 180px;
+    padding-top: 30px;
+  }
+  .logo__link {
+    text-decoration: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+  }
+  .logo {
+    margin: 0;
+    font-size: 30px;
+    font-family: "MontserratBold", serif;
+  }
+  .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  .nav__item:not(:last-child) {
+    padding-right: 55px;
+  }
+  .nav__item {
+    font-size: 14px;
+    font-family: "MontserratRegular", serif;
+    text-transform: uppercase;
+    list-style-type: none;
+  }
+  
+  .nav__text {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    outline: none;
+    -webkit-transition-property: color, border-bottom;
+    -o-transition-property: color, border-bottom;
+    transition-property: color, border-bottom;
+    -webkit-transition-duration: 200ms;
+         -o-transition-duration: 200ms;
+            transition-duration: 200ms;
+    -webkit-transition-timing-function: linear;
+         -o-transition-timing-function: linear;
+            transition-timing-function: linear;
+  }
+  .nav__text:hover {
+    content: "";
+    padding-bottom: 12px;
+    border-bottom: 4px solid rgb(252, 227, 138);
+    color: rgb(252, 227, 138);
+  }
+  .user-icon {
+    fill: rgb(255, 255, 255);
+    cursor: pointer;
+  }
+  .user-icon:hover {
+    fill: rgb(252, 227, 138);
+  }
+  .header__desc {
+    width: 860px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: rgb(255, 255, 255);
+  }
+  .header__title {
+    font-size: 72px;
+    font-family: "KaushanScript";
+    text-transform: capitalize;
+  }
+  
+  .header__subtitle {
+    font-family: "MontserratBold", serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 150px;
+  }

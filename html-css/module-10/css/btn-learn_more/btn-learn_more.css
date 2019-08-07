@@ -1,0 +1,17 @@
+  
+  .btn-learn_more {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 12px 28px;
+    
+    text-transform: uppercase;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    font-family: "MontserratBold", serif;
+    background-color: transparent;
+    border: 3px solid rgb(255, 255, 255);
+  }
+  .btn-learn_more--position {
+    margin: 125px 0 230px;
+  }
