@@ -35,7 +35,7 @@
         <div class="header__desc">
           <h2 class="header__title">creative template</h2>
           <span class="header__subtitle">wekcome to mogo</span>
-          <button class="header__btn btn-learn_more">learn more</button>
+          <button class="btn-learn_more btn-learn_more--position">learn more</button>
         </div>
       </header>
     </section>
@@ -92,7 +92,7 @@
       </ul>
     </section>
 
-    <section class="team">
+    <section class="team team--position">
       <h2 class="team__title">Who we are</h2>
       <span class="team__subtitle">meet our team</span>
       <p class="team__desc">
@@ -149,13 +149,9 @@
           <p class="team__list--subtitle">Graphic Designer</p>
         </li>
 
-
-
-
-
-        <li class="">
-          <div>
-            <div>
+        <li class="team__item">
+          <div class="team__item--hover">
+            <div class="team__img">
               <img
                 srcset="./img/christopher-campbell-min.png 380w, ./img/christopher-campbell@2x-min.png 760w"
                 src="./img/christopher-campbell-min.png"
@@ -163,28 +159,48 @@
                 height="470"
               />
             </div>
-
-            <ul>
+            <ul class="social-list">
               <li>
-                <a href="#" target="blank"><span class="visually-hidden">facebook</span></a>
+                <a href="#" target="blank" class="social-list__link">
+                  <svg width="12" height="26" class="social-list__icon">
+                    <use href="./img/symbol-defs.svg#icon-facebook"></use>
+                  </svg>
+                  <span class="visually-hidden">facebook</span>
+                </a>
               </li>
               <li>
-                <a href="#" target="blank"><span class="visually-hidden">twitter</span></a>
+                <a href="#" target="blank" class="social-list__link">
+                  <svg width="26" height="26" class="social-list__icon">
+                    <use href="./img/symbol-defs.svg#icon-twitter"></use>
+                  </svg>
+                  <span class="visually-hidden">twitter</span>
+                </a>
               </li>
               <li>
-                <a href="#" target="blank"><span class="visually-hidden">pinterest</span></a>
+                <a href="#" target="blank" class="social-list__link">
+                  <svg width="19" height="26" class="social-list__icon">
+                    <use href="./img/symbol-defs.svg#icon-pinterest"></use>
+                  </svg>
+                  <span class="visually-hidden">pinterest</span>
+                </a>
               </li>
               <li>
-                <a href="#" target="blank"><span class="visually-hidden">instagram</span></a>
+                <a href="#" target="blank" class="social-list__link">
+                  <svg width="26" height="26" class="social-list__icon">
+                    <use href="./img/symbol-defs.svg#icon-instagram"></use>
+                  </svg>
+                  <span class="visually-hidden">instagram</span>
+                </a>
               </li>
             </ul>
           </div>
-          <h3>christopher campbell</h3>
-          <p>Branding/UX design</p>
+          <h3 class="team__list--title">matthew dix</h3>
+          <p class="team__list--subtitle">Graphic Designer</p>
         </li>
-        <li class="">
-          <div>
-            <div>
+
+        <li class="team__item">
+          <div class="team__item--hover">
+            <div class="team__img">
               <img
                 srcset="./img/michael-fertig-min.png 380w, ./img/michael-fertig@2x-min.png 760w"
                 src="./img/michael-fertig-min.png"
@@ -192,24 +208,43 @@
                 height="470"
               />
             </div>
-
-            <ul>
+            <ul class="social-list">
               <li>
-                <a href="#" target="blank"><span class="visually-hidden">facebook</span></a>
+                <a href="#" target="blank" class="social-list__link">
+                  <svg width="12" height="26" class="social-list__icon">
+                    <use href="./img/symbol-defs.svg#icon-facebook"></use>
+                  </svg>
+                  <span class="visually-hidden">facebook</span>
+                </a>
               </li>
-              <li class="social-item">
-                <a href="#" target="blank"><span class="visually-hidden">twitter</span></a>
+              <li>
+                <a href="#" target="blank" class="social-list__link">
+                  <svg width="26" height="26" class="social-list__icon">
+                    <use href="./img/symbol-defs.svg#icon-twitter"></use>
+                  </svg>
+                  <span class="visually-hidden">twitter</span>
+                </a>
               </li>
-              <li class="social-item">
-                <a href="#" target="blank"><span class="visually-hidden">pinterest</span></a>
+              <li>
+                <a href="#" target="blank" class="social-list__link">
+                  <svg width="19" height="26" class="social-list__icon">
+                    <use href="./img/symbol-defs.svg#icon-pinterest"></use>
+                  </svg>
+                  <span class="visually-hidden">pinterest</span>
+                </a>
               </li>
-              <li class="social-item">
-                <a href="#" target="blank"><span class="visually-hidden">instagram</span></a>
+              <li>
+                <a href="#" target="blank" class="social-list__link">
+                  <svg width="26" height="26" class="social-list__icon">
+                    <use href="./img/symbol-defs.svg#icon-instagram"></use>
+                  </svg>
+                  <span class="visually-hidden">instagram</span>
+                </a>
               </li>
             </ul>
           </div>
-          <h3>michael fertig</h3>
-          <p>Developer</p>
+          <h3 class="team__list--title">matthew dix</h3>
+          <p class="team__list--subtitle">Graphic Designer</p>
         </li>
       </ul>
     </section>

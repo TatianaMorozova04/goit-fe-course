@@ -20,8 +20,8 @@
 
 @font-face {
     font-family: "RobotoLight";
-    src: url(../fonts/RobotoLight/roboto-v20-latin-300.woff) format("woff"),
-    url(../fonts/RobotoLight/roboto-v20-latin-300.woff2) format("woff2");
+    src: url(../fonts/RobotoLight/roboto-v20-latin-300italic.woff) format("woff"),
+    url(../fonts/RobotoLight/roboto-v20-latin-300italic.woff2) format("woff2");
 }
 @font-face {
     font-family: "KaushanScript";
