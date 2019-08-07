@@ -1,0 +1,72 @@
+
+.services {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .services__title {
+    font-size: 24px;
+    font-family: "KaushanScript";
+    padding-top: 40px;
+  }
+  .services__subtitle {
+    font-size: 30px;
+    font-family: "MontserratBold", serif;
+    text-transform: uppercase;
+  }
+  .services__subtitle::after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 60px;
+    padding-bottom: 45px;
+    border-bottom: 4px solid rgb(243, 129, 129);
+  }
+  .work-list {
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack:justify;
+        -ms-flex-pack:justify;
+            justify-content:space-between;
+  }
+  .work-list__item {
+    -ms-flex-preferred-size: 340px;
+        flex-basis: 340px;
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .work-list__item:nth-child(-n+3) {
+    padding: 70px 0 100px;
+  }
+  .work-list__icon {
+  padding-right: 30px;
+  }
+  .work-list__title {
+    margin: 0;
+    font-size: 14px;
+    font-family: "MontserratRegular", serif;
+    text-transform: uppercase;
+    color: rgb(51, 51, 51);
+    padding-bottom: 20px;
+  }
+  .work-list__text {
+    margin: 0;
+    font-size: 15px;
+    font-family: "RobotoRegular", serif;
+    color: rgb(153, 153, 153);
+    line-height: 24px;
+  }

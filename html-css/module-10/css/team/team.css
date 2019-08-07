@@ -1,0 +1,97 @@
+.team {
+  text-align: center;
+}
+.team--position {
+  margin: 90px auto;
+}
+.team__title {
+  font-size: 24px;
+  font-family: "KaushanScript";
+  padding-top: 40px;
+}
+.team__subtitle {
+  font-size: 30px;
+  font-family: "MontserratBold", serif;
+  text-transform: uppercase;
+}
+.team__subtitle::after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 60px;
+  padding-bottom: 45px;
+  border-bottom: 4px solid rgb(243, 129, 129);
+}
+.team__desc {
+  font-size: 15px;
+  font-family: "RobotoRegular", serif;
+  line-height: 24px;
+  color: #999999;
+  padding: 40px 0 90px;
+}
+
+.team__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.team__item {
+  margin-bottom: 30px;
+  position: relative;
+  -webkit-transition-property: -webkit-transform, -webkit-box-shadow;
+  transition-property: -webkit-transform, -webkit-box-shadow;
+  -o-transition-property: transform, box-shadow;
+  transition-property: transform, box-shadow;
+  transition-property: transform, box-shadow, -webkit-transform, -webkit-box-shadow;
+  -webkit-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  transition-timing-function: linear;
+}
+.team__item:hover {
+  -webkit-transform: translate(-10px, -10px);
+  -ms-transform: translate(-10px, -10px);
+  transform: translate(-10px, -10px);
+  -webkit-box-shadow: 10px 10px 0px 0px rgb(149, 225, 211);
+  box-shadow: 10px 10px 0px 0px rgb(149, 225, 211);
+}
+.team__item::after {
+  content: "";
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#fce38a), to(#f38181));
+  background-image: -o-linear-gradient(bottom, #fce38a, #f38181);
+  background-image: linear-gradient(0deg, #fce38a, #f38181);
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-transition: opacity 200ms linear;
+  -o-transition: opacity 200ms linear;
+  transition: opacity 200ms linear;
+}
+.team__item:hover::after {
+  opacity: 0.9;
+}
+.team__item:hover .social-list {
+  opacity: 1;
+}
+
+.team__list--title {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: "MontserratRegular", serif;
+  color: rgb(51, 51, 51);
+  margin-bottom: 15px;
+}
+.team__list--subtitle {
+  font-family: "RobotoLight", serif;
+}
