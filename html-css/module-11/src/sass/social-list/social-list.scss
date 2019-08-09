@@ -1,0 +1,40 @@
+.social-list {
+  list-style-type: none;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  opacity: 0;
+  transition: opacity 200ms linear;
+  cursor: pointer;
+
+  &__icon {
+    fill: $salmon;
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 56px;
+    height: 56px;
+    border-right: 1px solid rgba($salmon, 0.502);
+    background-color: $lemon-zest;
+
+    &:hover {
+      background-color: $salmon;
+
+      .social-list__icon {
+        fill: $color-light-theme;
+      }
+    }
+
+    &:last-child {
+      border-right: none;
+    }
+  }
+}

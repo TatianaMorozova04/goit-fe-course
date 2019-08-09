@@ -1,0 +1,34 @@
+.visually-hidden:not(:focus) :not(:active),
+input[type="checkbox"],
+visually-hidden,
+input[type="radio"],
+.visually-hidden {
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+.wrapper {
+  width: 1220px;
+  margin: 0 auto;
+}
+
+$color-light-theme: rgb(255, 255, 255);
+$color-dark-theme: rgb(51, 51, 51);
+$color-main: rgb(153, 153, 153);
+$color-placeholder: rgb(204, 204, 204);
+$lemon-zest: rgb(252, 227, 138);
+$salmon: rgb(243, 129, 129);
+$electric: rgb(149, 225, 211);
+
+
+$font-main:'RobotoRegular', serif;
+$font-main-italick: 'RobotoLight', serif;
+$font-title:'KaushanScript', cursive;
+$font-subtitle:'MontserratRegular', serif;
+$font-subtitle-bold:'MontserratBold', serif;

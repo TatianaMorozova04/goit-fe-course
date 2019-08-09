@@ -1,0 +1,85 @@
+.header {
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 180px;
+    padding-top: 30px;
+  }
+
+  &__desc {
+    width: 860px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $color-light-theme;
+  }
+
+  &__title {
+    font-size: 72px;
+    font-family: $font-title;
+    text-transform: capitalize;
+  }
+
+  &__subtitle {
+    font-family: $font-subtitle-bold;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 150px;
+  }
+}
+
+.logo {
+  margin: 0;
+  font-size: 30px;
+  font-family: $font-subtitle-bold;
+
+  &__link {
+    text-decoration: none;
+    outline: none;
+    color: $color-light-theme;
+  }
+}
+
+.nav {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  &__item {
+    font-size: 14px;
+    font-family: $font-subtitle;
+    text-transform: uppercase;
+    list-style-type: none;
+
+    &:not(:last-child) {
+      padding-right: 55px;
+    }
+  }
+
+  &__text {
+    text-decoration: none;
+    color: $color-light-theme;
+    outline: none;
+    transition-property: color, border-bottom;
+    transition-duration: 200ms;
+    transition-timing-function: linear;
+
+    &:hover {
+      content: '';
+      padding-bottom: 12px;
+      border-bottom: 4px solid $lemon-zest;
+      color: $lemon-zest;
+    }
+  }
+}
+
+.user-icon {
+  fill: $color-light-theme;
+  cursor: pointer;
+
+  &:hover {
+    fill: $lemon-zest;
+  }
+}
